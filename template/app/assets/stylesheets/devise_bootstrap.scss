@@ -1,0 +1,121 @@
+// Place all the styles related to the cleaners controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.float-none {
+  float: none;
+}
+
+.panel-heading {
+  padding: 15px;
+}
+
+.panel-heading h4 {
+  margin: 0px;
+}
+
+
+body{
+  background:image-url('banner.jpg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  
+  .container{
+    max-width:600px;
+    margin: 100px auto;
+    .logo{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.panel-default.main-block{
+  background: none;
+  border: 0px;
+  border-radius: 15px;
+  .panel-heading{
+      background: none;
+      border: 0px;
+      h4{
+      text-transform: uppercase;
+      color: #fff;
+      border: 0px;
+    }
+  }
+  .form-group{
+    label{
+      color: #fff;
+    }
+    input.form-control{
+      
+      height: 50px;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: 0px;
+      &::-moz-placeholder{
+        color: #fff;
+        font-size: 16px;
+        font-weight :400;
+        letter-spacing:3.5px;
+      }
+    }
+  }
+}
+
+form{
+  input.btn{        
+        background:rgba(3,36,53,0.5);
+        width:100%;
+        border: 1px #2e6da4 solid;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 8px 0px;        
+      }
+}
+
+.checkbox{
+  text-align: center;
+  label{
+    color: #fff;
+    line-height:27px;
+    text-transform: uppercase;
+  }      
+}
+
+.link-bottom{
+  padding-top: 25px;
+  a{
+     background:rgba(3,36,53,0.5);
+      float: right;
+      border: 1px #2e6da4 solid;
+      color: #fff;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 8px 10px;
+    &:first-child{
+      float: left;
+    }
+    &:hover{
+      text-decoration:none;
+    }   
+  }
+}
+
+#errors_div{
+ background: rgba(0, 0, 0, 0.5);
+ border: 1px;
+}
+
+@media screen and (max-width:767px){
+  .link-bottom{
+    a{
+      width:100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+

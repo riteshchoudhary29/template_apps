@@ -1,0 +1,9 @@
+<ul class="nav navbar-nav navbar-right">
+  <%% if devise_resource_signed_in? %>
+    <li><%%= link_to 'Logout', destroy_devise_resource_session_path, method: :delete %></li>
+  <%% else %>
+    <li><%%= link_to 'Login', new_devise_resource_session_path %></li>
+    <li><%%= link_to 'Sign up', new_devise_resource_registration_path %></li>
+  <%% end %>
+</ul>
+

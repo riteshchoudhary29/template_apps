@@ -1,0 +1,18 @@
+import React from 'react'
+
+class Footer extends React.Component {
+   render() {
+      return (
+         <div>
+           <footer className="footer">
+              <div className="container">
+                <p className="text-muted text-center">
+                   © Js Test1. All Right Reserved {(new Date().getFullYear())}.
+                 </p>
+              </div>
+           </footer>
+         </div>
+      );
+   }
+}
+export default Footer;

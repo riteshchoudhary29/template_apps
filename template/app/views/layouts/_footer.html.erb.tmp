@@ -1,0 +1,9 @@
+<div>
+  <footer class="footer">
+     <div class="container">
+       <p class="text-muted text-center">
+          © <%= app_const_base.titleize %>. All Right Reserved <%%= Date.current.year %>.
+        </p>
+     </div>
+  </footer>
+</div>

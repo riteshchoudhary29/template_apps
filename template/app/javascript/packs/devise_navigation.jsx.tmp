@@ -1,0 +1,14 @@
+import React from 'react'
+class DeviseNavigation extends React.Component {
+   render() {
+      return (
+          <ul className="nav navbar-nav navbar-right">
+            <li><a data-method="delete" href="#">Logout</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+      );
+   }
+}
+
+export default DeviseNavigation;

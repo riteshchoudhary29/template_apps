@@ -1,0 +1,11 @@
+# Add configuration values here, as shown below.
+
+development:
+  
+test:
+  
+production:
+  RAILS_SERVE_STATIC_FILES : Enable 
+  SECRET_KEY_BASE          : <%= `rake secret`.strip %> 
+  <%= app_const_base.upcase %>_DATABASE_USERNAME  : PRODUCTION_DATABASE_USERNAME
+  <%= app_const_base.upcase %>_DATABASE_PASSWORD  : PRODUCTION_DATABASE_PASSWORD
